@@ -1,8 +1,5 @@
 import React from "react"
-import { FaTwitter } from "react-icons/fa"
-import { FaGithub } from "react-icons/fa"
-import { FaDev } from "react-icons/fa"
-import { FaEnvelope } from "react-icons/fa"
+import { FaTwitter, FaGithub, FaDev, FaEnvelope } from "react-icons/fa"
 
 export default function Header() {
   return (

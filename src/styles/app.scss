@@ -42,3 +42,25 @@
   text-align: center;
   color: $white;
 }
+
+.about {
+  p:last-of-type {
+    margin-bottom: $md;
+  }
+  .about__image {
+    margin-bottom: $sm;
+  }
+  ul.about__facts li {
+    display: flex;
+    align-items: center;
+    margin-bottom: $sm;
+    span {
+      color: $primary;
+      font-size: $md;
+      padding-right: $sm;
+    }
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

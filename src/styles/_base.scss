@@ -72,11 +72,14 @@ h2,
 h3,
 h4 {
   @extend %heading;
+  color: $primary;
 }
 
 h1 {
   font-size: 31px;
+  color: $white;
 }
+
 h2 {
   font-size: 25px;
 }
@@ -90,7 +93,7 @@ h4 {
 }
 
 p {
-  margin-bottom: $md;
+  margin-bottom: $sm;
   &:last-of-type {
     margin-bottom: 0;
   }
