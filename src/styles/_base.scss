@@ -70,7 +70,14 @@ h3 {
 }
 
 h4 {
-  font-size: var(--sm);
+  font-size: $sm;
+}
+
+p {
+  margin-bottom: $md;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 strong {

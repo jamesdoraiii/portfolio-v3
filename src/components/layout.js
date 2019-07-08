@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import "../styles/app.scss"
 import Alert from "./alert"
 import Header from "./header"
+import Footer from "./footer"
 
 export default function Layout({ children }) {
   return (
@@ -10,6 +11,7 @@ export default function Layout({ children }) {
       <Alert />
       <Header />
       {children}
+      <Footer />
     </div>
   )
 }
