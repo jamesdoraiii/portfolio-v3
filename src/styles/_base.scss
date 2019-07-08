@@ -5,16 +5,30 @@ $white: #fdfeff;
 $grey: #dedeea;
 $black: #252530;
 $primary: #712ac9;
+$width: 728px;
+$break: 616px;
 $lg: 56px;
 $md: 28px;
 $sm: 16px;
 $xs: 6px;
 
-/* Containers */
+/* Wrappers */
 .container {
-  max-width: 728px;
+  max-width: $width;
   width: calc(100% - #{$lg});
   margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: $md;
+  @media (max-width: #{$break}) {
+    display: block;
+    .remove--on-break {
+      display: none;
+    }
+  }
 }
 
 /* Typography */

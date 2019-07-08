@@ -6,3 +6,30 @@
   text-align: center;
   padding: $xs 0;
 }
+
+.header {
+  background: $primary;
+  box-shadow: inset 0 $xs $sm -#{$xs} rgba($black, 0.75);
+  padding: $lg 0;
+  color: $white;
+  .header__image {
+    border-radius: 50%;
+    border: $xs solid $white;
+    align-self: center;
+  }
+  .header__info {
+    grid-column: span 2;
+    align-self: center;
+  }
+  ul.header__social {
+    display: flex;
+    margin-top: $sm;
+    li {
+      margin-left: $sm;
+      font-size: calc(#{$md} - #{$xs});
+    }
+    li:first-of-type {
+      margin-left: 0;
+    }
+  }
+}
