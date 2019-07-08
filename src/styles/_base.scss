@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Karla:400,400i|Rubik:700,700i&display=swap");
+
+/* Variables */
+$white: #fdfeff;
+$grey: #dedeea;
+$black: #272732;
+$primary: #712ac9;
+$lg: 56px;
+$md: 28px;
+$sm: 16px;
+$xs: 6px;
+
+/* Typography */
+%text {
+  font-family: "Karla", sans-serif;
+  font-size: $sm;
+  font-weight: 400;
+  line-height: $md;
+}
+
+%heading {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  line-height: $md;
+  margin-bottom: $sm;
+}
+
+body {
+  @extend %text;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @extend %heading;
+}
+
+h1 {
+  font-size: 31px;
+}
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: var(--sm);
+}
+
+strong {
+  @extend %heading;
+  margin-bottom: 0;
+}
+
+small {
+  font-size: 14px;
+}
