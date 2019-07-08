@@ -61,3 +61,28 @@
     }
   }
 }
+
+.hire {
+  .hire__skills {
+    margin-top: $sm;
+    li {
+      strong {
+        display: block;
+        font-style: normal;
+      }
+      margin-bottom: $xs;
+      font-style: italic;
+      &:last-of-type {
+        margin-bottom: $md;
+      }
+    }
+  }
+  .hire__learning {
+    border: $xs solid $grey;
+    padding: $sm;
+    border-radius: $sm;
+    h4 {
+      margin-bottom: 0;
+    }
+  }
+}
