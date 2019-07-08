@@ -5,17 +5,17 @@ import Alert from "./alert"
 import Header from "./header"
 import Footer from "./footer"
 
-export default function Layout({ children }) {
+export default function LayoutPage({ children }) {
   return (
     <div>
       <Alert />
       <Header />
-      {children}
+      <main className="page">{children}</main>
       <Footer />
     </div>
   )
 }
 
-Layout.propTypes = {
+LayoutPage.propTypes = {
   children: PropTypes.node.isRequired,
 }

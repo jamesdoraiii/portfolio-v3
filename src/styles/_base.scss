@@ -11,6 +11,8 @@ $lg: 56px;
 $md: 28px;
 $sm: 16px;
 $xs: 6px;
+$shadow: 0px $xs 10px #{$xs} rgba($black, 0.15);
+$inset: inset 0 $xs 10px -#{$xs} rgba($black, 0.75);
 
 /* Wrappers */
 .container {
@@ -31,6 +33,19 @@ $xs: 6px;
   }
 }
 
+/* Page */
+.page {
+  background: linear-gradient(180deg, $primary $lg, $grey $lg);
+}
+
+.page__content {
+  background: $white;
+  margin-bottom: $lg;
+  padding: $md;
+  border-radius: $sm;
+  box-shadow: $shadow;
+}
+
 /* Typography */
 %text {
   font-family: "Karla", sans-serif;
@@ -49,6 +64,7 @@ $xs: 6px;
 
 body {
   @extend %text;
+  background: $grey;
 }
 
 h1,
