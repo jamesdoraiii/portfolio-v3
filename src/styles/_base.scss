@@ -3,12 +3,19 @@
 /* Variables */
 $white: #fdfeff;
 $grey: #dedeea;
-$black: #272732;
+$black: #252530;
 $primary: #712ac9;
 $lg: 56px;
 $md: 28px;
 $sm: 16px;
 $xs: 6px;
+
+/* Containers */
+.container {
+  max-width: 728px;
+  width: calc(100% - #{$lg});
+  margin: 0 auto;
+}
 
 /* Typography */
 %text {
@@ -16,6 +23,7 @@ $xs: 6px;
   font-size: $sm;
   font-weight: 400;
   line-height: $md;
+  color: $black;
 }
 
 %heading {

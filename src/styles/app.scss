@@ -1,2 +1,8 @@
 @import "reset";
 @import "base";
+
+.alert {
+  background: $grey;
+  text-align: center;
+  padding: $xs 0;
+}
