@@ -44,6 +44,9 @@ $inset: inset 0 $xs 10px -#{$xs} rgba($black, 0.75);
   padding: $md;
   border-radius: $sm;
   box-shadow: $shadow;
+  > img {
+    margin-bottom: $sm;
+  }
 }
 
 /* Typography */

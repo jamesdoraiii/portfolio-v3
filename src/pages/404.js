@@ -8,14 +8,13 @@ export default function NotFoundPage() {
       <SEO title="404: Page Not Found!" />
       <div className="container">
         <div className="page__content">
-          <h1>404 Page</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            sed suscipit lacus. Donec dolor est, congue a enim ac, sollicitudin
-            viverra orci. Aliquam vitae auctor ligula. Praesent eget condimentum
-            nibh. Nam dictum quam dui, vel convallis lectus ultrices et. Nulla
-            pretium nulla sit amet turpis fringilla, non posuere enim suscipit.
-          </p>
+          <h2>404: Page Not Found!</h2>
+          <img
+            className="404__image"
+            src="https://media.giphy.com/media/3owzWbjLtq0BgNJALC/giphy.gif"
+            alt="Page Not Found!"
+          />
+          <p>The page you are looking for has been moved or no longer exist.</p>
         </div>
       </div>
     </Layout>
