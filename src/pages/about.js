@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout-page"
 import SEO from "../components/seo"
+import PageNav from "../components/page-nav"
 import {
   FaFish,
   FaIceCream,
@@ -64,6 +65,7 @@ export default function AboutPage() {
               including a Beatle.
             </li>
           </ul>
+          <PageNav />
         </div>
       </div>
     </Layout>

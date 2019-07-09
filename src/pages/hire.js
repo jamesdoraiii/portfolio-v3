@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout-page"
 import SEO from "../components/seo"
+import PageNav from "../components/page-nav"
 
 export default function HirePage() {
   return (
@@ -53,6 +54,7 @@ export default function HirePage() {
               Apollo.
             </small>
           </aside>
+          <PageNav />
         </div>
       </div>
     </Layout>

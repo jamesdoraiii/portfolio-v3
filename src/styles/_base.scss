@@ -2,7 +2,7 @@
 
 /* Variables */
 $white: #fefefe;
-$grey: #e8e8e8;
+$grey: #e6e6e6;
 $black: #404040;
 $primary: #6633cc;
 $width: 728px;
@@ -11,7 +11,7 @@ $lg: 56px;
 $md: 28px;
 $sm: 16px;
 $xs: 6px;
-$shadow: 0px $xs 10px #{$xs} rgba($black, 0.15);
+$shadow: 0px $xs 10px #{$xs} rgba($black, 0.16);
 $inset: inset 0 $xs 10px -#{$xs} rgba($black, 0.75);
 
 /* Wrappers */
@@ -46,6 +46,27 @@ $inset: inset 0 $xs 10px -#{$xs} rgba($black, 0.75);
   box-shadow: $shadow;
   > img {
     margin-bottom: $sm;
+  }
+}
+
+ul.page__nav {
+  display: flex;
+  align-items: center;
+  margin-top: $md;
+  li {
+    margin-left: $sm;
+    &:first-of-type {
+      margin-left: 0;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      font-size: $md;
+      span {
+        font-size: 14px;
+        margin-left: $xs;
+      }
+    }
   }
 }
 
@@ -112,7 +133,36 @@ small {
   font-size: 14px;
 }
 
-/* Other */
+/* Links, Hovers, and Buttons */
+
+a:link,
+a:visited {
+  color: $primary;
+  transition: all 0.15s ease-in-out;
+}
+
+a:active,
+a:hover {
+  color: $black;
+}
+
+.grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.grow:hover,
+.grow:focus,
+.grow:active {
+  -webkit-transform: scale(1.16);
+  transform: scale(1.16);
+}
 
 button {
   background: $primary;
@@ -123,4 +173,9 @@ button {
   font-family: "Rubik", sans-serif;
   font-weight: 700;
   font-size: 14px;
+  transition: all 0.14s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background: $black;
+  }
 }

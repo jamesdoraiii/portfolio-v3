@@ -2,9 +2,17 @@
 @import "base";
 
 .alert {
-  background: $grey;
-  text-align: center;
+  background: $white;
   padding: $xs 0;
+  small {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  span {
+    margin-right: $xs;
+  }
 }
 
 .header {
@@ -22,6 +30,15 @@
   .header__info {
     grid-column: span 2;
     align-self: center;
+    a:link,
+    a:visited {
+      color: lighten($primary, 28%);
+      text-decoration: underline;
+    }
+    a:hover,
+    a:active {
+      color: $white;
+    }
   }
   ul.header__social {
     display: flex;
@@ -41,24 +58,27 @@
   box-shadow: $inset;
   padding: $xs 0;
   text-align: center;
-  color: $white;
+  color: lighten($primary, 28%);
 }
 
 .about {
   p:last-of-type {
     margin-bottom: $md;
   }
-  ul.about__facts li {
-    display: flex;
-    align-items: center;
-    margin-bottom: $sm;
-    span {
-      color: $primary;
-      font-size: $md;
-      padding-right: $sm;
-    }
-    &:last-of-type {
-      margin-bottom: 0;
+  ul.about__facts {
+    border-bottom: $xs solid $grey;
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: $sm;
+      span {
+        color: $primary;
+        font-size: $md;
+        padding-right: $sm;
+      }
+      &:last-of-type {
+        margin-bottom: $md;
+      }
     }
   }
 }
@@ -104,18 +124,21 @@
   }
   ul.project__preview {
     display: flex;
+    align-items: center;
     margin-top: $sm;
     li {
-      display: flex;
-      align-items: center;
       margin-left: $sm;
-      font-size: $md;
       &:first-of-type {
         margin-left: 0;
       }
-      span {
-        font-size: 14px;
-        margin-left: $xs;
+      a {
+        display: flex;
+        align-items: center;
+        font-size: $md;
+        span {
+          font-size: 14px;
+          margin-left: $xs;
+        }
       }
     }
   }

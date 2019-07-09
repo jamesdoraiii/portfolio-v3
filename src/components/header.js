@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import { FaTwitter, FaGithub, FaDev, FaEnvelope } from "react-icons/fa"
 
@@ -15,20 +15,49 @@ export default function Header() {
           <p>
             My name is Justin Juno. I'm an infinitely curious JavaScript
             developer with a passion for serving the classroom and helping
-            teachers champion digital environments.
+            teachers champion digital environments.{" "}
+            <Link to="/about">Learn more.</Link>
           </p>
           <ul className="header__social">
-            <li>
-              <FaGithub />
+            <li className="grow">
+              <a
+                href="https://github.com/edtechdeveloper"
+                target="_blank"
+                without
+                rel="noopener noreferrer"
+              >
+                <FaGithub />
+              </a>
             </li>
-            <li>
-              <FaTwitter />
+            <li className="grow">
+              <a
+                href="https://twitter.com/edtechdeveloper"
+                target="_blank"
+                without
+                rel="noopener noreferrer"
+              >
+                <FaTwitter />
+              </a>
             </li>
-            <li>
-              <FaDev />
+            <li className="grow">
+              <a
+                href="https://dev.to/edtechdeveloper"
+                target="_blank"
+                without
+                rel="noopener noreferrer"
+              >
+                <FaDev />
+              </a>
             </li>
-            <li>
-              <FaEnvelope />
+            <li className="grow">
+              <a
+                href="mailto:justin@edtechdeveloper.com"
+                target="_blank"
+                without
+                rel="noopener noreferrer"
+              >
+                <FaEnvelope />
+              </a>
             </li>
           </ul>
         </div>

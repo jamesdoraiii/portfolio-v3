@@ -15,11 +15,25 @@ export default function Project(props) {
         <p>{props.overview}</p>
         <ul className="project__preview">
           <li>
-            <button>View Project</button>
+            <a
+              href="https://github.com/edtechdeveloper"
+              target="_blank"
+              without
+              rel="noopener noreferrer"
+            >
+              <button>View Project</button>
+            </a>
           </li>
           <li>
-            <FaGithub />
-            <span>View Source</span>
+            <a
+              href="https://github.com/edtechdeveloper"
+              target="_blank"
+              without
+              rel="noopener noreferrer"
+            >
+              <FaGithub />
+              <span>View Source</span>
+            </a>
           </li>
         </ul>
         <ul className="project__tech">
