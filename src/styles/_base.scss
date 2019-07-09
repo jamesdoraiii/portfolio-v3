@@ -89,6 +89,7 @@ h2 {
 
 h3 {
   font-size: 20px;
+  margin-bottom: $xs;
 }
 
 h4 {
@@ -108,5 +109,18 @@ strong {
 }
 
 small {
+  font-size: 14px;
+}
+
+/* Other */
+
+button {
+  background: $primary;
+  padding: $sm $md;
+  border: none;
+  border-radius: $xs;
+  color: $white;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
   font-size: 14px;
 }

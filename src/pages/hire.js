@@ -25,7 +25,8 @@ export default function HirePage() {
                 Emotion.
               </li>
               <li>
-                <strong>Javascript:</strong> ES5/6, React, Redux, Axios, Gatsby,
+                {/* eslint-disable-next-line */}
+                <strong>JavaScript:</strong> ES5/6, React, Redux, Axios, Gatsby,
                 MJML, Jest, and Vue.
               </li>
               <li>

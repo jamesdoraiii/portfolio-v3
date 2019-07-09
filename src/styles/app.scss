@@ -73,7 +73,7 @@
       margin-bottom: $xs;
       font-style: italic;
       &:last-of-type {
-        margin-bottom: $md;
+        margin-bottom: $sm;
       }
     }
   }
@@ -83,6 +83,73 @@
     border-radius: $sm;
     h4 {
       margin-bottom: 0;
+    }
+  }
+}
+
+.project {
+  grid-gap: 0 $md;
+  margin-bottom: $lg;
+  h2 {
+    grid-column: span 3;
+  }
+  .project__image {
+    grid-column: span 3;
+    margin-bottom: $sm;
+  }
+  .project__overview {
+    grid-column: span 2;
+    align-self: flex-start;
+  }
+  ul.project__preview {
+    display: flex;
+    margin-top: $sm;
+    li {
+      display: flex;
+      align-items: center;
+      margin-left: $sm;
+      font-size: $md;
+      &:first-of-type {
+        margin-left: 0;
+      }
+      span {
+        font-size: 14px;
+        margin-left: $xs;
+      }
+    }
+  }
+  ul.project__tech {
+    display: flex;
+    font-size: 14px;
+    margin-top: $sm;
+    li {
+      margin-left: $xs;
+      font-style: italic;
+      &:first-of-type {
+        margin-left: 0;
+      }
+      strong {
+        color: $primary;
+        font-style: normal;
+      }
+    }
+  }
+  .project__role {
+    grid-column: span 1;
+    border: $xs solid $grey;
+    padding: $sm;
+    border-radius: $sm;
+    align-self: flex-start;
+    strong {
+      display: block;
+      color: $primary;
+    }
+    @media (max-width: #{$break}) {
+      margin-top: $sm;
+      strong {
+        display: inline;
+        padding-right: $xs;
+      }
     }
   }
 }
