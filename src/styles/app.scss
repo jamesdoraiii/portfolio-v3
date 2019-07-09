@@ -17,6 +17,7 @@
     border: $xs solid $white;
     align-self: center;
     box-shadow: $shadow;
+    overflow: hidden;
   }
   .header__info {
     grid-column: span 2;

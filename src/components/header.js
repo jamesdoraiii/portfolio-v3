@@ -1,15 +1,15 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 import { FaTwitter, FaGithub, FaDev, FaEnvelope } from "react-icons/fa"
 
 export default function Header() {
   return (
     <header className="header">
       <div className="container grid">
-        <img
-          className="header__image remove--on-break"
-          src="http://placehold.it/400x400.jpg"
-          alt="Justin Juno Profile"
-        />
+        <div className="header__image remove--on-break">
+          <Avatar />
+        </div>
         <div className="header__info">
           <h1>Hello World!</h1>
           <p>
@@ -35,4 +35,20 @@ export default function Header() {
       </div>
     </header>
   )
+}
+
+const Avatar = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      avatarImage: file(relativePath: { eq: "avatar.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 728) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
+  return <Img fluid={data.avatarImage.childImageSharp.fluid} />
 }

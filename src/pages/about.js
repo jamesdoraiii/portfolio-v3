@@ -16,11 +16,6 @@ export default function AboutPage() {
       <div className="container">
         <div className="about page__content">
           <h2>About Me:</h2>
-          <img
-            className="about__image"
-            src="http://placehold.it/1920x1080.jpg"
-            alt="Justin Juno Family"
-          />
           <p>
             My name is Justin Juno. I'm an infinitely curious JavaScript
             developer with a passion for serving the classroom and helping
