@@ -1,14 +1,14 @@
 import React from "react"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { FaRegFileAlt } from "react-icons/fa"
 
 export default function PageNav() {
   return (
     <ul className="page__nav">
       <li>
-        <Link to="/">
+        <AniLink paintDrip to="/" hex="#6633cc" duration={0.6}>
           <button>View Portfolio</button>
-        </Link>
+        </AniLink>
       </li>
       <li>
         <a

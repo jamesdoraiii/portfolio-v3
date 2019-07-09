@@ -1,5 +1,6 @@
 import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Img from "gatsby-image"
 import { FaTwitter, FaGithub, FaDev, FaEnvelope } from "react-icons/fa"
 
@@ -16,7 +17,9 @@ export default function Header() {
             My name is Justin Juno. I'm an infinitely curious JavaScript
             developer with a passion for serving the classroom and helping
             teachers champion digital environments.{" "}
-            <Link to="/about">Learn more.</Link>
+            <AniLink paintDrip to="/about" hex="#6633cc" duration={0.6}>
+              Learn more.
+            </AniLink>
           </p>
           <ul className="header__social">
             <li className="grow">
