@@ -5,28 +5,26 @@ export default function Project(props) {
   return (
     <div className="project grid page__content">
       <h2>{props.name}</h2>
-      <img
-        className="project__image"
-        src="http://placehold.it/1920x1080.jpg"
-        alt={props.name}
-      />
+      <img className="project__image" src={props.image} alt={props.name} />
       <div className="project__overview">
         <h3>Overview:</h3>
         <p>{props.overview}</p>
         <ul className="project__preview">
+          {props.href.length < 1 ? null : (
+            <li>
+              <a
+                href={props.href}
+                target="_blank"
+                without
+                rel="noopener noreferrer"
+              >
+                <button>View Project</button>
+              </a>
+            </li>
+          )}
           <li>
             <a
-              href="https://github.com/edtechdeveloper"
-              target="_blank"
-              without
-              rel="noopener noreferrer"
-            >
-              <button>View Project</button>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/edtechdeveloper"
+              href={`https://github.com/edtechdeveloper/${props.source}`}
               target="_blank"
               without
               rel="noopener noreferrer"
