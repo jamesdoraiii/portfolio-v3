@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout-page"
 import SEO from "../components/seo"
 import Project from "../components/project"
+import discoveryIMG from "../images/discovery-preview.jpg"
 import mailIMG from "../images/mail-preview.jpg"
 import isteIMG from "../images/iste-preview.jpg"
 
@@ -10,6 +11,15 @@ export default function IndexPage() {
     <Layout>
       <SEO title="Home" />
       <div className="container">
+        <Project
+          name="Mentoring Minds Discovery Engine"
+          image={discoveryIMG}
+          href="https://discover.mentoringminds.com"
+          source=""
+          technology={["React", "Styled Components"]}
+          overview={`The Discovery Engine is a sales tool for our customer-facing teams to deliver cohesive and geo-specific product presentations in the field and from our office. With this application, team members can select their profile and guide potential customers through our brand, research, traits, and more. As well as share samples of our multiple product offerings. Resulting in a professional presentation that has increased sales and customer engagement.`}
+          roles="Collaborated and worked directly with key stakeholders to meet the needs of our sales and support teams. Sole designer and developer."
+        />
         <Project
           name="Mentoring Minds Mail"
           image={mailIMG}

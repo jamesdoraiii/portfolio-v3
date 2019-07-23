@@ -22,17 +22,19 @@ export default function Project(props) {
               </a>
             </li>
           )}
-          <li>
-            <a
-              href={`https://github.com/edtechdeveloper/${props.source}`}
-              target="_blank"
-              without
-              rel="noopener noreferrer"
-            >
-              <FaGithub />
-              <span>View Source</span>
-            </a>
-          </li>
+          {props.source.length < 1 ? null : (
+            <li>
+              <a
+                href={`https://github.com/edtechdeveloper/${props.source}`}
+                target="_blank"
+                without
+                rel="noopener noreferrer"
+              >
+                <FaGithub />
+                <span>View Source</span>
+              </a>
+            </li>
+          )}
         </ul>
         <ul className="project__tech">
           <li>
