@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout-page"
 import SEO from "../components/seo"
 import PageNav from "../components/page-nav"
+import aboutIMG from "../images/twins-about.jpg"
 import {
   FaFish,
   FaIceCream,
@@ -17,17 +18,21 @@ export default function AboutPage() {
       <div className="container">
         <div className="about page__content">
           <h2>About Me:</h2>
+          <img
+            className="about__image"
+            src={aboutIMG}
+            alt="Justin Juno Twins"
+          />
           <p>
-            My name is Justin Juno. I'm an infinitely curious JavaScript
-            developer with a passion for serving the classroom and helping
-            teachers champion digital environments. I live in Whitehouse, Texas
-            and work for Mentoring Minds, a national educational publisher.
-            Where I lead the design and development of our digital landscape.
+            Hello, my name is Justin Juno! I'm an EdTech developer and advocate
+            from Whitehouse, Texas. I work for Mentoring Minds, a national
+            educational publisher, where I lead the design and development of
+            our digital landscape.
           </p>
           <p>
-            In my spare time, I enjoy coaching aspiring developers,
-            wood-working, and spending time with my lovely wife and our
-            beautiful twins.
+            I'm happily married and a proud father of twins. When I'm not
+            coding, changing diapers, or sleeping, chances are I'm spending time
+            with my beautiful family or wood-working.
           </p>
           <h3>Fun Facts:</h3>
           <ul className="about__facts">

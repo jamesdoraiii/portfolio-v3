@@ -13,7 +13,7 @@ export default function IndexPage() {
         <Project
           name="Mentoring Minds Mail"
           image={mailIMG}
-          href=""
+          href="https://github.com/edtechdeveloper/Mentoring-Minds-Mail-System"
           source="Mentoring-Minds-Mail-System"
           technology={["React", "MJML", "HTML", "Marketo"]}
           overview={`A custom email marketing system with nearly a dozen templates to cover all touchpoints and communication funnels. Including lead generation, customer nurture, event, product, content, and more. All templates work seamlessly with the Marketo platform and take advantage of their dynamic fields/syntax. Letting team members to easily create, customize, and deploy emails without the assistance of a developer.`}

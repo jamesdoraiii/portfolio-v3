@@ -62,6 +62,12 @@
 }
 
 .about {
+  .about__image {
+    margin-bottom: $sm;
+    box-shadow: $shadow;
+    border-radius: $sm;
+    border: $xs solid $white;
+  }
   p:last-of-type {
     margin-bottom: $md;
   }
