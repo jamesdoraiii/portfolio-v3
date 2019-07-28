@@ -2,13 +2,13 @@ import React from "react"
 import Layout from "../components/layout-page"
 import SEO from "../components/seo"
 import PageNav from "../components/page-nav"
-import aboutIMG from "../images/twins-about.jpg"
+import me from "../images/me.jpeg"
 import {
-  FaFish,
-  FaIceCream,
-  FaCompactDisc,
-  FaTshirt,
-  FaBandAid,
+  FaPizzaSlice,
+  FaCarAlt,
+  FaStopwatch,
+  FaGamepad,
+  FaMotorcycle,
 } from "react-icons/fa"
 
 export default function AboutPage() {
@@ -18,56 +18,59 @@ export default function AboutPage() {
       <div className="container">
         <div className="about page__content">
           <h2>About Me:</h2>
-          <img
-            className="about__image"
-            src={aboutIMG}
-            alt="Justin Juno Twins"
-          />
+          <img className="about__image" src={me} alt="Jimmy" />
           <p>
-            Hello, my name is Justin Juno! I'm an EdTech developer and advocate
-            from Whitehouse, Texas. I work for Mentoring Minds, a national
-            educational publisher, where I lead the design and development of
-            our digital landscape.
+            Hello, my name is James Dora! I'm a web developer from Indianapolis,
+            Indiana. I am currently working as a React developer for a
+            consulting firm called PearCircuit in Fishers Indiana. I am an
+            Indiana University Bloomington Alumnus as well as a graduate from
+            Eleven Fifty's JavaScript bootcamp in Fishers. I love solving
+            problems and facing new challenges so programming is a natural fit
+            for me.
           </p>
-          <p>
+          {/* <p>
             I'm happily married and a proud father of twins. When I'm not
             coding, changing diapers, or sleeping, chances are I'm spending time
             with my beautiful family or wood-working.
-          </p>
-          <h3>Fun Facts:</h3>
+          </p> */}
+          <h3>Fun Facts About Me:</h3>
           <ul className="about__facts">
             <li>
               <span>
-                <FaFish />
+                <FaPizzaSlice />
               </span>
-              Many moons ago, I was a Pantry Chef at a high-end sushi
-              restaurant.
+              I love to cook and I make a mean home made pizza. Both New York
+              and Chicago style!
             </li>
             <li>
               <span>
-                <FaCompactDisc />
+                <FaCarAlt />
               </span>
-              I love the Beastie Boys! Their album "Hello Nasty" changed my
-              life.
+              I am a massive automotive enthusiast and take up automotive
+              detailing in my free time. I would love to eventually get into
+              autocross or amateur racing.
             </li>
             <li>
               <span>
-                <FaIceCream />
+                <FaStopwatch />
               </span>
-              I have an unhealthy addiction to Blue Bell ice cream.
+              I am very interested in horology and love colleting watches.
             </li>
             <li>
               <span>
-                <FaBandAid />
+                <FaGamepad />
               </span>
-              I'm deeply terrified of wasps or anything that can fly and sting.
+              When I have free time I enjoy PC gaming! Feel free to add me on
+              Steam @jimmyd233
             </li>
             <li>
               <span>
-                <FaTshirt />
+                <FaMotorcycle />
               </span>
-              I've created merchandise for several major recording artists,
-              including a Beatle.
+              Although I no longer ride when I was in college I loved buying,
+              repairing, and customizing cheap motorcycles. I think this is
+              partly where my enthusiasm for problem solving and building things
+              came from.
             </li>
           </ul>
           <PageNav />

@@ -11,49 +11,71 @@ export default function HirePage() {
         <div className="hire page__content">
           <h2>What I'm looking for:</h2>
           <p>
-            I'm searching for remote opportunities that will allow me to lead
-            and learn from my peers on a daily basis. I'd like to join a diverse
-            team and work for a company that values design, work-life balance,
-            and personal growth. While I love being part of the educational
-            space, I'll happily write code to support any product that makes a
-            positive impact and benefits the world of tomorrow.
+            I am searching for front-end/full stack developor oppurtunities with
+            a preference towards working in React. I am activeley seeking a work
+            environment where I have the priveledge of working alongside other
+            talented individuals. I am a team player and think being able to
+            learn from and teach others while collaborating on a project is one
+            of the best parts of working in this industry. I would like a
+            position where I have the opportunity to work on a variety of
+            different projects and be exposed to new technogies frequently. I am
+            a lifelong learner and would love any position that allows me to
+            continually expand my skillset.
           </p>
           <div className="hire__skills">
-            <h3>What I Know:</h3>
+            <h3>Technical Abilities:</h3>
             <ul>
               <li>
-                <strong>HTML/CSS:</strong> JSX, SASS, Styled Components, and
-                Emotion.
+                <strong>Programming Languages:</strong> Javascript, Python,
+                Java, HTML5, CSS3, C#.
               </li>
               <li>
                 {/* eslint-disable-next-line */}
-                <strong>JavaScript:</strong> ES5/6, React, Redux, Axios, Gatsby,
-                MJML, Jest, and Vue.
+                <strong>JavaScript Specialties:</strong> ES5/6, React, Angular
+                7, Node, TypeScript, NextJS.
               </li>
               <li>
-                <strong>CMS/E-Commerce:</strong> WordPress, Shopify, Stripe, and
-                GraphCMS.
+                <strong>Database Interaction:</strong> Postgres, PgAdmin, Rest
+                API, GraphQL, Apollo, SQL, Microsoft Access, Postman, Express,
+                Postgraphile, GraphiQL.
               </li>
               <li>
-                <strong>Tools:</strong> VS Code, JetBrains IDE, Github, Postman,
-                Photoshop/Illustrator, and Figma.
+                <strong>Development Methodologies:</strong> Agile, Scrum,
+                Waterfall
               </li>
               <li>
-                <strong>Marketing/CRM/Communication:</strong> Marketo,
-                MailChimp, Trello, Slack, and BaseCamp.
+                <strong>Miscellaneous:</strong> Git, JSON, Android Studio,
+                Excel, VSCode.
               </li>
             </ul>
           </div>
-          <aside className="hire__learning">
-            <h4>Where I Can Grow:</h4>
-            <small>
-              As a designer turned developer, I've primarily been concerned with
-              the presentation layer of most of my applications. That said, I'm
-              currently studying and learning more about databases and modern
-              tools for querying APIs, such as: Node, AWS, MongoDB, GraphQL, and
-              Apollo.
-            </small>
-          </aside>
+
+          <div className="hire__skills">
+            <h3>Education:</h3>
+            <ul>
+              <li>
+                <strong>Indiana University:</strong>
+                <ul>
+                  <li>Bachelor of Science in Informatics</li>
+                  <li>Minor: Business</li>
+                  <li>Graduated May 2018</li>
+                </ul>
+              </li>
+              <li>
+                {/* eslint-disable-next-line */}
+                <strong>Eleven Fifty Academy:</strong>
+                <ul>
+                  <li>Javascript Cohort</li>
+                  <li>
+                    600+ hours of experience with Javascript and relevant
+                    libraries/frameworks.
+                  </li>
+                  <li>Graduated May 2019</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
           <PageNav />
         </div>
       </div>

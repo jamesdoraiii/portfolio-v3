@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Justin Juno | EdTechDeveloper`,
-    description: `Hello, world! I'm an infinitely curious JavaScript developer with a passion for serving the classroom and helping teachers champion digital environments.`,
-    author: `@edtechdeveloper`,
+    title: `James Dora | React Developer`,
+    description: `My name is James Dora, and I am Javascript/React Developer. I have an insatiable appetite for learning new things and expanding my skillset. Nothing gives me a stronger sense of satisfaction than picking up a new skill, implimenting it into a project, and building a gorgeous, functional, web application which people will actually use.`,
+    author: `@jamesdoraiii`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

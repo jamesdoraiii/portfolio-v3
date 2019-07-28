@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="container">
         <small>
-          All Rights Reserved. Copyright {new Date().getFullYear()}.
+          All Rights Reserved. Copyright {new Date().getFullYear()} James Dora.
         </small>
       </div>
     </footer>

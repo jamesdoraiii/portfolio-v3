@@ -14,7 +14,7 @@ export default function NotFoundPage() {
           <img className="404__image" src={yodaIMG} alt="Page Not Found!" />
           <p>
             The page you are looking for has been moved or no longer exist.{" "}
-            <AniLink paintDrip to="/" hex="#6633cc" duration={0.6}>
+            <AniLink paintDrip to="/" hex="#145d88" duration={0.6}>
               Go back home.
             </AniLink>
           </p>

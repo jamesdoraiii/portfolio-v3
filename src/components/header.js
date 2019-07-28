@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Img from "gatsby-image"
-import { FaTwitter, FaGithub, FaDev, FaEnvelope } from "react-icons/fa"
+import { FaGithub, FaEnvelope, FaLinkedin } from "react-icons/fa"
 
 export default function Header() {
   return (
@@ -14,17 +14,20 @@ export default function Header() {
         <div className="header__info">
           <h1>Hello World!</h1>
           <p>
-            My name is Justin Juno. I'm an infinitely curious JavaScript
-            developer with a passion for serving the classroom and helping
-            teachers champion digital environments.{" "}
-            <AniLink paintDrip to="/about" hex="#6633cc" duration={0.6}>
-              Learn more.
+            My name is James Dora, and I am Javascript/React Developer. I have
+            an insatiable appetite for learning new things and expanding my
+            skillset. Nothing gives me a stronger sense of satisfaction than
+            learning a new technology, implimenting it into a project, and
+            building a gorgeous, functional, web application that can make
+            someone's life just a little easier. <br />{" "}
+            <AniLink paintDrip to="/about" hex="#145d88" duration={0.6}>
+              Get to know me!
             </AniLink>
           </p>
           <ul className="header__social">
             <li className="grow">
               <a
-                href="https://github.com/edtechdeveloper"
+                href="https://github.com/jamesdoraiii"
                 target="_blank"
                 without
                 rel="noopener noreferrer"
@@ -34,27 +37,17 @@ export default function Header() {
             </li>
             <li className="grow">
               <a
-                href="https://twitter.com/edtechdeveloper"
+                href="https://www.linkedin.com/in/james-dora-2950b3aa/"
                 target="_blank"
                 without
                 rel="noopener noreferrer"
               >
-                <FaTwitter />
+                <FaLinkedin />
               </a>
             </li>
             <li className="grow">
               <a
-                href="https://dev.to/edtechdeveloper"
-                target="_blank"
-                without
-                rel="noopener noreferrer"
-              >
-                <FaDev />
-              </a>
-            </li>
-            <li className="grow">
-              <a
-                href="mailto:justin@edtechdeveloper.com"
+                href="mailto:jamesdoraiii@gmail.com"
                 target="_blank"
                 without
                 rel="noopener noreferrer"
@@ -72,7 +65,7 @@ export default function Header() {
 const Avatar = () => {
   const data = useStaticQuery(graphql`
     query {
-      avatarImage: file(relativePath: { eq: "avatar.jpg" }) {
+      avatarImage: file(relativePath: { eq: "headshot.png" }) {
         childImageSharp {
           fluid(maxWidth: 728) {
             ...GatsbyImageSharpFluid

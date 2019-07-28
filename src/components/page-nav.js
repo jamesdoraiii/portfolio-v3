@@ -6,7 +6,7 @@ export default function PageNav() {
   return (
     <ul className="page__nav">
       <li>
-        <AniLink paintDrip to="/" hex="#6633cc" duration={0.6}>
+        <AniLink paintDrip to="/" hex="#145d88" duration={0.6}>
           <button>View Portfolio</button>
         </AniLink>
       </li>

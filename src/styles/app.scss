@@ -10,13 +10,19 @@
     justify-content: center;
     text-align: center;
   }
+  medium {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
   span {
     margin-right: $xs;
   }
 }
 
 .header {
-  background: $primary;
+  background-image: linear-gradient(#3c88b4 20%, $primary 80%);
   box-shadow: $inset;
   padding: $lg 0;
   color: $white;
@@ -32,7 +38,7 @@
     align-self: center;
     a:link,
     a:visited {
-      color: lighten($primary, 28%);
+      color: lighten($primary, 50%);
       text-decoration: underline;
     }
     a:hover,
@@ -42,10 +48,10 @@
   }
   ul.header__social {
     display: flex;
-    margin-top: $sm;
+    margin-top: $md;
     li {
-      margin-left: $sm;
-      font-size: calc(#{$md} - #{$xs});
+      margin-left: $md;
+      font-size: calc(#{$md});
     }
     li:first-of-type {
       margin-left: 0;
@@ -58,12 +64,15 @@
   box-shadow: $inset;
   padding: $xs 0;
   text-align: center;
-  color: lighten($primary, 28%);
+  color: lighten($primary, 50%);
 }
 
 .about {
   .about__image {
     margin-bottom: $sm;
+    height: 350px;
+    object-fit: cover;
+    object-position: 50% 21%;
     box-shadow: $shadow;
     border-radius: $sm;
     border: $xs solid $white;
@@ -72,7 +81,6 @@
     margin-bottom: $md;
   }
   ul.about__facts {
-    border-bottom: $xs solid $grey;
     li {
       display: flex;
       align-items: center;
@@ -91,14 +99,13 @@
 
 .hire {
   .hire__skills {
-    margin-top: $sm;
+    margin-top: $md;
     li {
       strong {
         display: block;
         font-style: normal;
       }
       margin-bottom: $xs;
-      font-style: italic;
       &:last-of-type {
         margin-bottom: $sm;
       }
@@ -119,13 +126,20 @@
   margin-bottom: $lg;
   h2 {
     grid-column: span 3;
+    margin-bottom: $md;
+  }
+  h3 {
+    grid-column: span 3;
+    margin-bottom: $sm;
   }
   .project__image {
     grid-column: span 3;
-    margin-bottom: $sm;
+    margin-bottom: $md;
     box-shadow: $shadow;
     border-radius: $sm;
     border: $xs solid $white;
+    max-height: 350px;
+    object-fit: cover;
   }
   .project__overview {
     grid-column: span 2;
@@ -134,7 +148,7 @@
   ul.project__preview {
     display: flex;
     align-items: center;
-    margin-top: $sm;
+    margin-top: $md;
     li {
       margin-left: $sm;
       &:first-of-type {
@@ -145,16 +159,25 @@
         align-items: center;
         font-size: $md;
         span {
-          font-size: 14px;
+          font-size: 18px;
           margin-left: $xs;
         }
+      }
+    }
+    @media (max-width: 500px) {
+      button {
+        margin-bottom: 20px;
       }
     }
   }
   ul.project__tech {
     display: flex;
-    font-size: 14px;
-    margin-top: $sm;
+    @media (max-width: 500px) {
+      display: inline;
+      text-align: center;
+    }
+    font-size: 18px;
+    margin-top: $md;
     li {
       margin-left: $xs;
       font-style: italic;
@@ -178,6 +201,12 @@
       display: block;
       color: $primary;
     }
+    small {
+      font-size: $sm;
+    }
+    li {
+      margin-top: 20px;
+    }
     @media (max-width: #{$break}) {
       margin-top: $sm;
       strong {
@@ -186,4 +215,13 @@
       }
     }
   }
+
+  // .technologiesContainer {
+  //   background-color: $primary;
+  //   color: white;
+  //   text-align: center;
+  //   border-radius: 20px;
+  //   width: 80px;
+  //   margin-left: 10px;
+  // }
 }

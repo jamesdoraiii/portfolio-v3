@@ -2,14 +2,14 @@
 
 /* Variables */
 $white: #fefefe;
-$grey: #e6e6e6;
-$black: #404040;
-$primary: #6633cc;
-$width: 728px;
+$grey: #d4d4d4;
+$black: #2e2e2e;
+$primary: #145d88;
+$width: 62.8%;
 $break: 616px;
 $lg: 56px;
 $md: 28px;
-$sm: 16px;
+$sm: 18px;
 $xs: 6px;
 $shadow: 0px $xs 10px #{$xs} rgba($black, 0.16);
 $inset: inset 0 $xs 10px -#{$xs} rgba($black, 0.75);
@@ -17,6 +17,10 @@ $inset: inset 0 $xs 10px -#{$xs} rgba($black, 0.75);
 /* Wrappers */
 .container {
   max-width: $width;
+  @media only screen and (max-width: 600px) {
+    max-width: 90%;
+  }
+
   width: calc(100% - #{$lg});
   margin: 0 auto;
 }

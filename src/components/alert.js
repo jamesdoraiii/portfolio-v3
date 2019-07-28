@@ -6,14 +6,14 @@ export default function Alert() {
   return (
     <div className="alert">
       <div className="container">
-        <AniLink paintDrip to="/hire" hex="#6633cc" duration={0.6}>
-          <small>
+        <AniLink paintDrip to="/hire" hex="#145d88" duration={0.6}>
+          <medium>
             <span role="img" aria-label="Hey!">
               👋
             </span>{" "}
-            <span>Are you hiring? I'm seeking remote opportunities!</span>
+            <span>Are you hiring? Learn more about my qualifications!</span>
             <FaLongArrowAltRight />
-          </small>
+          </medium>
         </AniLink>
       </div>
     </div>
