@@ -12,7 +12,7 @@ export default function PageNav() {
       </li>
       <li>
         <a
-          href="https://github.com/edtechdeveloper"
+          href="https://github.com/jamesdoraiii"
           target="_blank"
           without
           rel="noopener noreferrer"
