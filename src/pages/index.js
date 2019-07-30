@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../components/layout-page"
 import SEO from "../components/seo"
 import Project from "../components/project"
-import discoveryIMG from "../images/discovery-preview.jpg"
 import dj from "../images/dj.jpg"
 import pokemon from "../images/pokemon4.jpg"
 import carWash from "../images/carwash.jpg"
@@ -44,7 +43,7 @@ export default function IndexPage() {
             "Material",
             "MomentJs",
           ]}
-          overview={`This was one of the more interesting projects I have had the priveledge of working on during my time as a developer as well as one of my strongest learning experience. While working at Pearcircuit we were tasked with creating an application that could handle all of the goings on at Purdue Polytechnic Highschool. This included students scheduling their optional classes each week, setting up qr readers for students to scan in and out of school, allow teachers to take attendance, allow administrators to create classes, and much more. We were basically responsible for creating a web application that would run the entire school and all the development work fell on me and one other junior developer. While completing this project I learned many new technologies most y GraphQL which I absolutely fell in love with. This project was my first time experiencing a true period of crunch. We had a little over a month to complete this project with all of the core functionality in place so that PPHS could begin school on time. In addition to this we had to deal with changing requirments from our client right up until the final week. In the end the project was completed on time with full functionality and I was very proud of my work. Unfortunately since this is a privately owned application I am unable to share source code or an example of the working site.`}
+          overview={`This was one of the more interesting projects I have had the priveledge of working on during my time as a developer as well as one of my strongest learning experience. While working at Pearcircuit we were tasked with creating an application that could handle all of the goings on at Purdue Polytechnic Highschool. This included students scheduling their optional classes each week, setting up qr readers for students to scan in and out of school, allow teachers to take attendance, allow administrators to create classes, and much more. We were basically responsible for creating a web application that would run the entire school and all the development work fell on me and one other junior developer. While completing this project I learned many new technologies most notably, GraphQL, which I absolutely fell in love with. This project was my first time experiencing a true period of crunch. We had a little over a month to complete this project with all of the core functionality in place so that PPHS could begin school on time. In addition to this we had to deal with changing requirments from our client right up until the final week. In the end the project was completed on time with full functionality and I was very proud of my work. Unfortunately since this is a privately owned application I am unable to share source code or an example of the working site.`}
           roles={[
             "Developer responsible for all the functions/views of the 'student' and 'teacher' user rolls",
           ]}

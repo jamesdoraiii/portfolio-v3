@@ -12,7 +12,7 @@ export default function PageNav() {
       </li>
       <li>
         <a
-          href="https://github.com/jamesdoraiii"
+          href="https://drive.google.com/file/d/0B-OYsRxUrC74cjljSDlHTEwycUlsRm1IOWJfZWJSUmtLNVRV/view?usp=sharing"
           target="_blank"
           without
           rel="noopener noreferrer"
