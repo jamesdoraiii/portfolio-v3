@@ -18,7 +18,7 @@ export default function IndexPage() {
           image={carWash}
           href="https://wash-me-client.herokuapp.com/home"
           source="Wash-Me-Client"
-          technology={["React", "Styled Components"]}
+          technology={["Angular", "Node", "Postgres", "Express", "Material UI"]}
           overview={`Wash Me is an entrepreneurial idea that I have been wanting to work on for for a while and decided to complete as my capstone project for Eleven Fifty. Wash Me is a peer to peer automotive detailing application created with the intent of making it easier for people to connect with hobby automotive detailers in order to have their vehicle detailed at a cheaper price, and with more flexibility, than going through a professional service. This project was the largest project I had taken on to date and was completed with a team that included two of my fellow classmates from Eleven Fifty. I took on a leadership role while completing this project, and handled the wireframing of the project, the planning of what components would be necessary, the design of how said components would operate, and the delegation of tasks to the teammate whos abilities best suited said task.`}
           roles={[
             "Team Leader",
