@@ -11,15 +11,15 @@ export default function HirePage() {
         <div className="hire page__content">
           <h2>What I'm looking for:</h2>
           <p>
-            I am searching for front-end/full stack developor oppurtunities with
-            a preference towards working in React. I am activeley seeking a work
-            environment where I have the priveledge of working alongside other
+            I am searching for front-end/full stack developer opportunities with
+            a preference towards working in React. I am actively seeking a work
+            environment where I have the privelege of working alongside other
             talented individuals. I am a team player and think being able to
             learn from and teach others while collaborating on a project is one
             of the best parts of working in this industry. I would like a
             position where I have the opportunity to work on a variety of
-            different projects and be exposed to new technogies frequently. I am
-            a lifelong learner and would love any position that allows me to
+            different projects and be exposed to new technologies frequently. I
+            am a lifelong learner and would love any position that allows me to
             continually expand my skillset.
           </p>
           <div className="hire__skills">

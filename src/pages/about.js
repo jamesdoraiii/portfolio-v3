@@ -24,15 +24,11 @@ export default function AboutPage() {
             Indiana. I am currently working as a React developer for a
             consulting firm called PearCircuit in Fishers Indiana. I am an
             Indiana University Bloomington Alumnus as well as a graduate from
-            Eleven Fifty's JavaScript bootcamp in Fishers. I love solving
+            Eleven Fifty's JavaScript boot camp in Fishers. I love solving
             problems and facing new challenges so programming is a natural fit
             for me.
           </p>
-          {/* <p>
-            I'm happily married and a proud father of twins. When I'm not
-            coding, changing diapers, or sleeping, chances are I'm spending time
-            with my beautiful family or wood-working.
-          </p> */}
+
           <h3>Fun Facts About Me:</h3>
           <ul className="about__facts">
             <li>
@@ -68,9 +64,9 @@ export default function AboutPage() {
                 <FaMotorcycle />
               </span>
               Although I no longer ride when I was in college I loved buying,
-              repairing, and customizing cheap motorcycles. I think this is
-              partly where my enthusiasm for problem solving and building things
-              came from.
+              repairing, and customizing cheap motorcycles then flipping them
+              for a profit. I think this is partly where my enthusiasm for
+              problem solving and building things came from.
             </li>
           </ul>
           <PageNav />

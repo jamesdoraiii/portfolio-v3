@@ -17,7 +17,7 @@ export default function Header() {
             My name is James Dora, and I am Javascript/React Developer. I have
             an insatiable appetite for learning new things and expanding my
             skillset. Nothing gives me a stronger sense of satisfaction than
-            learning a new technology, implimenting it into a project, and
+            learning a new technology, implementing it into a project, and
             building a gorgeous, functional, web application that can make
             someone's life just a little easier. <br />{" "}
             <AniLink paintDrip to="/about" hex="#145d88" duration={0.6}>
