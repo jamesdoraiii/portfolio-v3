@@ -1,11 +1,12 @@
-import React from "react"
 import Layout from "../components/layout-page"
-import SEO from "../components/seo"
 import Project from "../components/project"
-import dj from "../images/dj.jpg"
-import pokemon from "../images/pokemon4.jpg"
+import React from "react"
+import SEO from "../components/seo"
 import carWash from "../images/carwash.jpg"
+import dj from "../images/dj.jpg"
+import dj1 from "../images/dj-1.jpg"
 import htc from "../images/htc.png"
+import pokemon from "../images/pokemon4.jpg"
 import purdue from "../images/purdue.jpg"
 
 export default function IndexPage() {
@@ -13,6 +14,22 @@ export default function IndexPage() {
     <Layout>
       <SEO title="Home" />
       <div className="container">
+        <Project
+          name="Playlistr"
+          image={dj1}
+          href=""
+          source="playlistr-client"
+          technology={[
+            "Angular 10",
+            "Postgres",
+            "Postgraphile",
+            "GraphQL",
+            "Tailwind",
+          ]}
+          overview={`Playlistr is a side project that I have been working on in my free time. I like to describe it as Reddit for sharing Spotify playlists. Users are given the ability to post their Spotify playlists and then vote on, and discuss playlists with other users. I originally started this project after seeing a very cool Spotify clone posted on reddit. I started looking into the Spotify API and decided it would be fun to build a spotify clone of my own. I had recently learned about Tailwind and wanted to try using it to build a complex GUI. As my basic Spotify clone began coming together I started considering how I could take this project and make it more than just a Spotify clone. This is where I came up with the idea to augment Playlistr with social media features. I created a database schema, setup a Postgraphile Database, and then used Postgraphile to setup a GraphQL API to support the social media features. I am currently finishing the development of said features and a deployed example of Playlistr will be available soon.`}
+          roles={["Sole Developer"]}
+          original=""
+        />
         <Project
           name="Wash Me"
           image={carWash}

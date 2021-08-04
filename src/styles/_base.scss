@@ -21,7 +21,7 @@ $inset: inset 0 $xs 10px -#{$xs} rgba($black, 0.75);
     max-width: 90%;
   }
 
-  width: calc(100% - #{$lg});
+  width: calc(100% - #{$md});
   margin: 0 auto;
 }
 

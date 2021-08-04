@@ -1,15 +1,16 @@
-import React from "react"
-import Layout from "../components/layout-page"
-import SEO from "../components/seo"
-import PageNav from "../components/page-nav"
-import me from "../images/me.jpeg"
 import {
-  FaPizzaSlice,
   FaCarAlt,
-  FaStopwatch,
   FaGamepad,
   FaMotorcycle,
+  FaPizzaSlice,
+  FaStopwatch,
 } from "react-icons/fa"
+
+import Layout from "../components/layout-page"
+import PageNav from "../components/page-nav"
+import React from "react"
+import SEO from "../components/seo"
+import me from "../images/me.jpeg"
 
 export default function AboutPage() {
   return (
@@ -20,13 +21,12 @@ export default function AboutPage() {
           <h2>About Me:</h2>
           <img className="about__image" src={me} alt="Jimmy" />
           <p>
-            Hello, my name is James Dora! I'm a web developer from Indianapolis,
-            Indiana. I am currently working as a React developer for a
-            consulting firm called PearCircuit in Fishers Indiana. I am an
-            Indiana University Bloomington Alumnus as well as a graduate from
-            Eleven Fifty's JavaScript boot camp in Fishers. I love solving
-            problems and facing new challenges so programming is a natural fit
-            for me.
+            Hello, my name is James Dora! I am an Indiana University Bloomington
+            Alumnus as well as a graduate from Eleven Fifty's JavaScript boot
+            camp in Fishers. I currently reside in Chicago Illinois where I have
+            been working as a full stack web developer full time for a little
+            over 2 years. I love solving problems and facing new challenges, so
+            programming is a natural fit for me.
           </p>
 
           <h3>Fun Facts About Me:</h3>
@@ -35,23 +35,24 @@ export default function AboutPage() {
               <span>
                 <FaPizzaSlice />
               </span>
-              I love to cook and I make a mean home made pizza. Both New York
-              and Chicago style!
+              In my free time I love to cook and bake. One of my favorite things
+              to cook is homemade pizzas and I love experimenting in the
+              kitchen.
             </li>
             <li>
               <span>
                 <FaCarAlt />
               </span>
-              I am a massive automotive enthusiast and take up automotive
-              detailing in my free time. I would love to eventually get into
-              autocross or amateur racing.
+              I am a massive automotive enthusiast and love anything that has to
+              do with cars. One of my favorite weekend activities is visiting
+              Cars and Coffee meets with my father.
             </li>
-            <li>
+            {/* <li>
               <span>
                 <FaStopwatch />
               </span>
               I am very interested in horology and love colleting watches.
-            </li>
+            </li> */}
             <li>
               <span>
                 <FaGamepad />
@@ -59,7 +60,7 @@ export default function AboutPage() {
               When I have free time I enjoy PC gaming! Feel free to add me on
               Steam @jimmyd233
             </li>
-            <li>
+            {/* <li>
               <span>
                 <FaMotorcycle />
               </span>
@@ -67,7 +68,7 @@ export default function AboutPage() {
               repairing, and customizing cheap motorcycles then flipping them
               for a profit. I think this is partly where my enthusiasm for
               problem solving and building things came from.
-            </li>
+            </li> */}
           </ul>
           <PageNav />
         </div>

@@ -1,7 +1,7 @@
-import React from "react"
 import Layout from "../components/layout-page"
-import SEO from "../components/seo"
 import PageNav from "../components/page-nav"
+import React from "react"
+import SEO from "../components/seo"
 
 export default function HirePage() {
   return (
@@ -11,17 +11,41 @@ export default function HirePage() {
         <div className="hire page__content">
           <h2>What I'm looking for:</h2>
           <p>
-            I am searching for front-end/full stack developer opportunities with
-            a preference towards working in React. I am actively seeking a work
-            environment where I have the privelege of working alongside other
+            I am currently searching for front-end/full stack developer
+            opportunities in Chicago, IL. I am actively seeking a work
+            environment where I have the privilege of working alongside other
             talented individuals. I am a team player and think being able to
             learn from and teach others while collaborating on a project is one
             of the best parts of working in this industry. I would like a
             position where I have the opportunity to work on a variety of
             different projects and be exposed to new technologies frequently. I
             am a lifelong learner and would love any position that allows me to
-            continually expand my skillset.
+            continually expand my skill set. Lastly I am looking for a position
+            that has a hybrid in office/work from home setup. Like many others I
+            have discovered the joys of working from home over the past year but
+            I do still appreciate having to opportunity to spend some time in
+            the office and the opportunity to work with my peers face to face.
           </p>
+
+          <div className="hire__skills">
+            <h3>Experience:</h3>
+            <ul>
+              <li>
+                <strong>Quotepro:</strong>
+                <ul>
+                  <li>detail</li>
+                  <li>detail</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Pearcircuit:</strong>
+                <ul>
+                  <li>detail</li> <li>detail</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
           <div className="hire__skills">
             <h3>Technical Abilities:</h3>
             <ul>

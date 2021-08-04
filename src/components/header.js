@@ -1,8 +1,9 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa"
+import { graphql, useStaticQuery } from "gatsby"
+
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Img from "gatsby-image"
-import { FaGithub, FaEnvelope, FaLinkedin } from "react-icons/fa"
+import React from "react"
 
 export default function Header() {
   return (
@@ -14,12 +15,12 @@ export default function Header() {
         <div className="header__info">
           <h1>Hello World!</h1>
           <p>
-            My name is James Dora, and I am Javascript/React Developer. I have
-            an insatiable appetite for learning new things and expanding my
-            skillset. Nothing gives me a stronger sense of satisfaction than
-            learning a new technology, implementing it into a project, and
-            building a gorgeous, functional, web application that can make
-            someone's life just a little easier. <br />{" "}
+            My name is James Dora, and I have been a full time web developer for
+            over two years. I have an insatiable appetite for learning new
+            things and expanding my skillset. Nothing gives me a stronger sense
+            of satisfaction than learning a new technology, implementing it into
+            a project, and building a gorgeous, functional, web application that
+            can make someone's life just a little easier. <br />{" "}
             <AniLink paintDrip to="/about" hex="#145d88" duration={0.6}>
               Get to know me!
             </AniLink>
